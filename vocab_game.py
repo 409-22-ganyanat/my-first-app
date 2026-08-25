@@ -99,7 +99,7 @@ if "ans4_val" not in st.session_state:
     st.session_state.ans4_val = ""
     
 ans3 = st.text_input("ข้อ 3: As sweet as ripe `p _ _ c h`. 🍑", value=st.session_state.ans3_val,)
-ans3 = st.text_input("ข้อ 4: Vigethos is Beagle `cocon _ _` CN name. 🥥", value=st.session_state.ans4_val,)
+ans4 = st.text_input("ข้อ 4: Vigethos is Beagle `cocon _ _` CN name. 🥥", value=st.session_state.ans4_val,)
 
 st.session_state.ans3_val = ans3
 st.session_state.ans4_val = ans4
