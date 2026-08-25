@@ -8,7 +8,10 @@ if "ans1_val" not in st.session_state:
     st.session_state.ans1_val = ""
 if "ans2_val" not in st.session_state:
     st.session_state.ans2_val = ""
-
+if "ans3_va1" not in st.session_state:
+    st.session_state.ans3_va1 = ""
+if "ans4_val" not in st.session_state:
+    st.session_state.ans4_val = ""
 
 # 📌 ฟังก์ชันเคลียร์ค่าเมื่อกดปุ่มเริ่มใหม่
 def reset_game():
@@ -93,11 +96,6 @@ st.session_state.ans1_val = ans1
 st.session_state.ans2_val = ans2
 
 # ✏️ [พื้นที่สำหรับนักเรียน]: เพิ่มข้อ 3, 4 ตรงนี้
-if "ans3_va1" not in st.session_state:
-    st.session_state.ans3_va1 = ""
-if "ans4_val" not in st.session_state:
-    st.session_state.ans4_val = ""
-    
 ans3 = st.text_input("ข้อ 3: As sweet as ripe `p _ _ c h`. 🍑", value=st.session_state.ans3_val,)
 ans4 = st.text_input("ข้อ 4: Vigethos is Beagle `cocon _ _` CN name. 🥥", value=st.session_state.ans4_val,)
 
