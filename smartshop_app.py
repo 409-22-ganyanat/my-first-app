@@ -1,11 +1,15 @@
 import streamlit as st
-st.title("Khai Kue Chiwit (Eggs are life)")
-st.divider()
-price = st.number_input("กรอกราคาสินค้า (บาท):", value=0.0)
-vat = price*0.07
-net_price = price-vat
-st.header(f"• ภาษีมูลค่าเพิ่ม (VAT 7%): **{vat:.2f}** บาท")
-st.header(f"• ราคาสุทธิ: {net_price:.2f} บาท")
+
+st.markdown("# :red[Khai Kue Chiwit (Eggs are life)]")
+
+st.write("รายการอาหารและราคา")
+menu = {
+  menu_1 = [{"name":"เครปไข่เจียว","ราคา":35}],
+  menu_2 = [{"name":"ซุปไข่ข้นมะเขือเทศ","ราคา":40}],
+  menu_3 = [{"name":"ไข่ตุ๋นหมูเด้ง","ราคา":40}],
+  menu_4 = [{"name":"ไข่ลูกเขยระเบิด","ราคา":39}],
+}
+
 st.divider()
 st.write("นางสาวกัญญาวีร์ แสนคำ เลขที่ 19 ม.4/9")
 st.write("นางสาวกัญญานัท ละอำ เลขที่ 22 ม.4/9")
